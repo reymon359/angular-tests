@@ -11,4 +11,18 @@
 <p [ngClass]="{'text-danger' : properties.danger, 'text-info': !properties.danger}">Hey I change with properties.danger</p>
 
 <button (click)="properties.danger = !properties.danger" type="button" name="button" class="btn btn-danger" [ngClass]="{'btn-danger': properties.danger, 'btn-info': !properties.danger}">
+Change</button><br><br>
+<textarea rows="10" cols="70" disabled> 
+  <div [ngClass]="alert" class="alert" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<button type="button" class="btn btn-info mr-3" (click)="alert = 'alert-info'">Info</button>
+<button type="button" class="btn btn-success" (click)="alert = 'alert-success'">Success</button>
+
+<p [ngClass]="{'text-danger' : properties.danger, 'text-info': !properties.danger}">Hey I change with properties.danger</p>
+
+<button (click)="properties.danger = !properties.danger" type="button" name="button" class="btn btn-danger" [ngClass]="{'btn-danger': properties.danger, 'btn-info': !properties.danger}">
 Change</button>
+
+</textarea>
