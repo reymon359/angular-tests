@@ -1,3 +1,9 @@
-<p>
-  classes works!
-</p>
+<h2>NgClass <small><a href="https://angular.io/api/common/NgClass">docs</a></small></h2>
+<p>Use it to apply a class or classes to elements using conditions or not</p>
+
+<div [ngClass]="alert" class="alert" role="alert">
+    A simple primary alert—check it out!
+</div>
+
+<button type="button" class="btn btn-info mr-3" (click)="alert = 'alert-info'">Info</button>
+<button type="button" class="btn btn-success" (click)="alert = 'alert-success'">Success</button>
