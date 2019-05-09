@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-ng-style',
   template: `
   <h2>NgStyle <small><a href="https://angular.io/api/common/NgStyle">docs</a></small></h2>
-
-
+  <p>Use it to change the style attribute from an element</p>
 
     <p [style.fontSize.px]="size">
       Hello world... this is a tag
