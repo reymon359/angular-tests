@@ -1,3 +1,8 @@
 .main-container {
     margin-top: 40px;
 }
+
+textarea {
+    background-color: darkcyan;
+    color: #fff;
+}
