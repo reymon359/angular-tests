@@ -26,3 +26,12 @@ Change</button><br><br>
 Change</button>
 
 </textarea>
+<hr>
+<h2>Async process </h2>
+<p>Demo of an Async process </p>
+
+<button (click)="executeProcess()" class="btn btn-primary" type="button" name="button" [disabled]="loading">
+  <i [ngClass]="{'fa-save': !loading,'fa-refresh fa-spin':loading}" class="fa"></i>
+  <span *ngIf="!loading"> Save changes</span>
+  <span *ngIf="loading"> Wait please  </span>
+</button>
