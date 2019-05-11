@@ -1,3 +1,48 @@
-<p>
-  ng-switch works!
-</p>
+<h2>ngSwitch <small><a href="https://angular.io/api/common/NgSwitch">docs</a></small></h2>
+<p>To switch html depending on a variable </p>
+
+<div [ngSwitch]="alert">
+    <div *ngSwitchCase="'success'">success</div>
+    <div *ngSwitchCase="'info'">info</div>
+    <div *ngSwitchCase="'warning'">warning</div>
+    <div *ngSwitchDefault> danger</div>
+</div><br>
+<div [ngSwitch]="alert">
+    <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+        This is a success alert—check it out!
+    </div>
+    <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+        This is a info alert—check it out!
+    </div>
+    <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+        This is a warning alert—check it out!
+    </div>
+    <div *ngSwitchDefault class="alert alert-danger" role="alert">
+        This is a danger alert—check it out!
+    </div>
+</div>
+<button type="button" (click)="alert = 'success'" class="btn btn-default">change</button> <br><br>
+<textarea rows="10" cols="70" disabled> 
+    <div [ngSwitch]="alert">
+        <div *ngSwitchCase="'success'">success</div>
+        <div *ngSwitchCase="'info'">info</div>
+        <div *ngSwitchCase="'warning'">warning</div>
+        <div *ngSwitchDefault> danger</div>
+    </div><br>
+    <div [ngSwitch]="alert">
+        <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+            This is a info alert—check it out!
+        </div>
+        <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+            This is a warning alert—check it out!
+        </div>
+        <div *ngSwitchDefault class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+    </div>
+<button type="button" (click)="alert = 'success'" class="btn btn-default">change</button>
+
+</textarea>
