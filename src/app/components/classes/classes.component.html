@@ -34,4 +34,12 @@ Change</button>
   <i [ngClass]="{'fa-save': !loading,'fa-refresh fa-spin':loading}" class="fa"></i>
   <span *ngIf="!loading"> Save changes</span>
   <span *ngIf="loading"> Wait please  </span>
+</button><br><br>
+<textarea rows="10" cols="70" disabled> 
+<button (click)="executeProcess()" class="btn btn-primary" type="button" name="button" [disabled]="loading">
+  <i [ngClass]="{'fa-save': !loading,'fa-refresh fa-spin':loading}" class="fa"></i>
+  <span *ngIf="!loading"> Save changes</span>
+  <span *ngIf="loading"> Wait please  </span>
 </button>
+
+</textarea>
