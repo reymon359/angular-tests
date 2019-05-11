@@ -11,11 +11,11 @@ import { Component, OnInit } from '@angular/core';
     </p>
 
     <button class="btn btn-primary" (click)="size = size + 5">
-    <i class="fa fa-plus"></i>
+    <i class="fas fa-plus"></i>
     </button>
     
     <button class="btn btn-primary" (click)="size = size - 5">
-    <i class="fa fa-minus"></i>
+    <i class="fas fa-minus"></i>
     </button><br><br>
     <textarea  rows="10" cols="70" disabled>    size = 10; 
     <p [style.fontSize.px]="size">
@@ -23,11 +23,11 @@ import { Component, OnInit } from '@angular/core';
     </p>
   
     <button class="btn btn-primary" (click)="size = size + 5">
-      <i class="fa fa-plus"></i>
+      <i class="fas fa-plus"></i>
     </button>
     
     <button class="btn btn-primary" (click)="size = size - 5">
-      <i class="fa fa-minus"></i>
+      <i class="fas fa-minus"></i>
     </button> </textarea>
   `,
   styles: []
