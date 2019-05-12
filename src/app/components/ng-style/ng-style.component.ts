@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
       Hello world... this is a tag
     </p>
 
-    <button class="btn btn-primary" (click)="size = size + 5">
+    <button class="btn btn-primary mr-2" (click)="size = size + 5">
     <i class="fas fa-plus"></i>
     </button>
     
@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
       Hello world... this is a tag
     </p>
   
-    <button class="btn btn-primary" (click)="size = size + 5">
+    <button class="btn btn-primary mr-2" (click)="size = size + 5">
       <i class="fas fa-plus"></i>
     </button>
     
