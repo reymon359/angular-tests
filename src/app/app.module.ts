@@ -7,6 +7,7 @@ import { CssComponent } from './components/css/css.component';
 import { ClassesComponent } from './components/classes/classes.component';
 import { HighlightedDirective } from './directives/highlighted.directive';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     CssComponent,
     ClassesComponent,
     HighlightedDirective,
-    NgSwitchComponent
+    NgSwitchComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
