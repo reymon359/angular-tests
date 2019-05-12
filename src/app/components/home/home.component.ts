@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
+  AfterViewInit, AfterViewChecked, OnDestroy
+} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -20,14 +23,42 @@ import { Component, OnInit } from '@angular/core';
   </textarea>
   <hr>
   <app-ng-switch></app-ng-switch>
+  <hr>
+  <h2>Lifecycle Hooks <small><a href="https://angular.io/guide/lifecycle-hooks">docs</a></small></h2>
+  <p>Open console and watch when do they get activated </p>
   `,
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
+  AfterViewInit, AfterViewChecked, OnDestroy {
 
-  constructor() { }
+  constructor() {
+    console.log('constructor');
+   }
 
   ngOnInit() {
+    console.log('ngOnInit');
+  }
+  ngOnChanges() {
+    console.log('ngOnChanges');
+  }
+  ngDoCheck() {
+    console.log('ngDoCheck');
+  }
+  ngAfterContentInit() {
+    console.log('ngAfterContentInit');
+  }
+  ngAfterContentChecked() {
+    console.log('ngAfterContentChecked');
+  }
+  ngAfterViewInit() {
+    console.log('ngAfterViewInit');
+  }
+  ngAfterViewChecked() {
+    console.log('ngAfterViewChecked');
+  }
+  ngOnDestroy() {
+    console.log('ngOnDestroy');
   }
 
 }
