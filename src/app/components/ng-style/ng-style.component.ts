@@ -13,19 +13,16 @@ import { Component, OnInit } from '@angular/core';
     <button class="btn btn-primary mr-2" (click)="size = size + 5">
     <i class="fas fa-plus"></i>
     </button>
-    
     <button class="btn btn-primary" (click)="size = size - 5">
     <i class="fas fa-minus"></i>
     </button><br><br>
-    <textarea  rows="10" cols="70" disabled>    size = 10; 
+    <textarea  rows="10" cols="70" disabled>    size = 10;
     <p [style.fontSize.px]="size">
       Hello world... this is a tag
     </p>
-  
     <button class="btn btn-primary mr-2" (click)="size = size + 5">
       <i class="fas fa-plus"></i>
     </button>
-    
     <button class="btn btn-primary" (click)="size = size - 5">
       <i class="fas fa-minus"></i>
     </button> </textarea>

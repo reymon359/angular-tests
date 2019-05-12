@@ -18,7 +18,7 @@ import {
   <h2>Directives <small><a href="https://angular.io/guide/attribute-directives">docs</a></small></h2>
   <p>To make our own directives </p>
   <p [appHighlighted]="'orange'">Hello I have a directive</p>
-  <textarea rows="2" cols="70" disabled> 
+  <textarea rows="2" cols="70" disabled>
       <p [appHighlighted]="'orange'">Hello I have a directive</p>
   </textarea>
   <hr>

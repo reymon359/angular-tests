@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassesComponent implements OnInit {
 
-  alert: string = "alert-danger";
+  alert = 'alert-danger';
 
+  // tslint:disable-next-line:ban-types
   properties: Object = {
     danger: true
   };
 
-  loading: boolean = false;
+  loading = false;
 
   constructor() { }
 
