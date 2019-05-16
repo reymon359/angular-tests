@@ -31,7 +31,7 @@ Change</button>
 <p>Demo of an Async process </p>
 
 <button (click)="executeProcess()" class="btn btn-primary" type="button" name="button" [disabled]="loading">
-  <i [ngClass]="{'fa-save': !loading,'fa-refresh fa-spin':loading}" class="fa"></i>
+  <i [ngClass]="{'fa-save': !loading,'fa-refresh fa-spin':loading}" class="fas"></i>
   <span *ngIf="!loading"> Save changes</span>
   <span *ngIf="loading"> Wait please  </span>
 </button><br><br>
