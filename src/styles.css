@@ -5,4 +5,5 @@
 textarea {
     background-color: darkcyan;
     color: #fff;
+    max-width: 100%;
 }

@@ -6,14 +6,23 @@ import {
 @Component({
   selector: 'app-home',
   template: `
+  <div class="row">
+  <div class="col-md-6">
+  <app-classes></app-classes>
 
-
+  </div>
+  <div class="col-md-6">
+  <app-css></app-css>
   <app-ng-style></app-ng-style>
   <hr>
-  <app-css></app-css>
-  <p>Hello world from app.component</p>
-  <hr>
-  <app-classes></app-classes>
+ 
+  </div>
+</div>
+
+
+  
+ 
+ 
   <hr>
   <h2>Directives <small><a href="https://angular.io/guide/attribute-directives">docs</a></small></h2>
   <p>To make our own directives </p>
