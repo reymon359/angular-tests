@@ -9,20 +9,13 @@ import {
   <div class="row">
   <div class="col-md-6">
   <app-classes></app-classes>
-
+  <hr>
+  <app-ng-switch></app-ng-switch>
   </div>
   <div class="col-md-6">
   <app-css></app-css>
-  <app-ng-style></app-ng-style>
   <hr>
- 
-  </div>
-</div>
-
-
-  
- 
- 
+  <app-ng-style></app-ng-style>
   <hr>
   <h2>Directives <small><a href="https://angular.io/guide/attribute-directives">docs</a></small></h2>
   <p>To make our own directives </p>
@@ -31,10 +24,17 @@ import {
       <p [appHighlighted]="'orange'">Hello I have a directive</p>
   </textarea>
   <hr>
-  <app-ng-switch></app-ng-switch>
-  <hr>
   <h2>Lifecycle Hooks <small><a href="https://angular.io/guide/lifecycle-hooks">docs</a></small></h2>
   <p>Open console and watch when do they get activated </p>
+  </div>
+</div>
+
+
+  
+ 
+
+
+ 
   `,
   styles: []
 })
